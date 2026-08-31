@@ -11,34 +11,125 @@ export default function AboutPage() {
     <div className="pt-12 md:pt-20 pb-0 relative overflow-x-hidden">
       <div className="container mx-auto px-4 max-w-5xl">
         
-        {/* COMPANY STORY: Mission Split Variant */}
+        {/* PROJECT: FILLING EMPTY LABS */}
         <section className="mb-20">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <FadeIn>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-brand-navy">About A-CML</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-brand-navy uppercase tracking-tight">
+                Project: Filling Empty Labs
+              </h1>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="text-base sm:text-lg md:text-xl text-slate-800 font-medium leading-relaxed mb-6">
-                African-Caribbean Manufacturing Ltd (A-CML) was incorporated in <strong>April 2025</strong> with a singular mission: to democratize access to high-quality science education in Ghana by localizing the production of laboratory apparatus.
-              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl text-brand-red font-medium leading-relaxed mb-4">
+                Filling the Labs, Practical Learning, Better Results.
+              </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                For too long, African schools have relied on expensive, imported equipment that is difficult to maintain and replace. A-CML bridges this gap by manufacturing durable, internationally-standardized equipment right here in Ghana.
+              <p className="text-lg md:text-xl text-slate-600 font-medium italic">
+                Made in Ghana. Built to Last. Priced for Africa.
               </p>
             </FadeIn>
           </div>
           
-          <FadeIn fullWidth className="w-[100vw] relative left-1/2 -translate-x-1/2">
-            <div className="bg-brand-navy py-12 md:py-16 text-white shadow-inner">
-              <div className="container mx-auto px-4 max-w-4xl text-center">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">International Affiliation</h3>
-                <p className="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-                  A-CML operates in proud affiliation with <strong className="text-white">Akpabey Group LLC, USA</strong>, ensuring that our manufacturing processes, quality control, and organizational standards meet rigorous global benchmarks.
-                </p>
+          {/* Grid for Problem & Solution */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <FadeIn delay={0.3} className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+              <h3 className="text-2xl font-bold text-brand-navy mb-4">1. THE PROBLEM</h3>
+              <p className="text-slate-700 leading-relaxed text-lg">
+                Currently, most Senior High Schools in Ghana and across WAEC countries have empty or ill-equipped science laboratories, forcing students to learn science without practical experience. This leads to poor understanding of science concepts and low WASSCE performance in core science subjects.
+              </p>
+            </FadeIn>
+            
+            <FadeIn delay={0.4} className="bg-brand-navy p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-white mb-4">2. OUR SOLUTION</h3>
+              <p className="text-slate-300 leading-relaxed text-lg">
+                A-CML manufactures and supplies durable, high-quality science laboratory equipment using locally sourced materials at an affordable price. As an affiliate of Akpabey Group LLC, USA, we combine international standards with local production to ensure every SHS can afford a complete, functional lab.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* Grid for Vision & Mission */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <FadeIn delay={0.5} className="p-8">
+              <h3 className="text-2xl font-bold text-brand-navy mb-4">3. VISION</h3>
+              <p className="text-slate-700 leading-relaxed text-lg">
+                To ensure no science student in Ghana and across WAEC countries learns science without practical experience - where every SHS has a fully equipped, functional laboratory that delivers better WASSCE results.
+              </p>
+            </FadeIn>
+            
+            <FadeIn delay={0.6} className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="text-2xl font-bold text-brand-navy mb-4">4. MISSION</h3>
+              <p className="text-slate-700 leading-relaxed text-lg">
+                To manufacture and supply affordable, durable science laboratory equipment using local materials, and to equip, repair, and train SHS science departments to transform empty labs into centers of practical learning.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* Full width Objectives */}
+          <FadeIn fullWidth className="w-[100vw] relative left-1/2 -translate-x-1/2 mb-16">
+            <div className="bg-slate-50 py-16 border-y border-slate-100">
+              <div className="container mx-auto px-4 max-w-4xl">
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-10 text-center">5. PROJECT OBJECTIVES</h3>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <span className="font-bold text-brand-red text-xl">a.</span>
+                    <p className="text-slate-800 text-lg">To manufacture and supply at least 50 essential science apparatus at 30% less cost than imported alternatives.</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-bold text-brand-red text-xl">b.</span>
+                    <p className="text-slate-800 text-lg">To equip 100 underserved SHS laboratories with complete functional setups within 24 months.</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-bold text-brand-red text-xl">c.</span>
+                    <p className="text-slate-800 text-lg">To provide hands-on training for 300 science teachers and lab technicians on equipment use, safety, and maintenance.</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-bold text-brand-red text-xl">d.</span>
+                    <p className="text-slate-800 text-lg">To establish a sustainable repair and maintenance system to ensure labs remain functional.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </FadeIn>
+
+          {/* Grid for Impact & Commitment */}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <FadeIn delay={0.7} className="px-4">
+              <h3 className="text-2xl font-bold text-brand-navy mb-6">6. EXPECTED IMPACT</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-slate-700">
+                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
+                  <span className="text-lg">Improved practical understanding of science among students</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
+                  <span className="text-lg">Better WASSCE results in Physics, Chemistry and Biology</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
+                  <span className="text-lg">Reduced import dependency and foreign exchange loss for Ghana</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
+                  <span className="text-lg">Creation of local manufacturing jobs for Ghanaian youth</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
+                  <span className="text-lg">Sustainable, functional science labs that last for years</span>
+                </li>
+              </ul>
+            </FadeIn>
+            
+            <FadeIn delay={0.8}>
+              <div className="bg-brand-red text-white p-10 md:p-12 rounded-3xl text-center shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-white/90 uppercase tracking-widest text-sm">7. Our Commitment</h3>
+                <p className="text-xl md:text-2xl font-medium leading-relaxed">
+                  We don't just supply equipment - We <br/><br/>
+                  <span className="font-bold text-2xl md:text-3xl underline decoration-4 underline-offset-8">Manufacture, Install, Repair, and Train.</span>
+                </p>
+              </div>
+            </FadeIn>
+          </div>
         </section>
 
         {/* FEATURED CASE STUDY (HERO BANNER) */}
@@ -67,17 +158,18 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <FadeIn fullWidth delay={0.3} direction="up" className="w-[100vw] relative left-1/2 -translate-x-1/2 mb-0">
-          <section>
-            {/* Image with widescreen aspect ratio on mobile, fixed height on desktop */}
-            <div 
-              className="w-full aspect-video md:aspect-auto md:min-h-[600px] bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: "url('/Case-study.jpg')" }}
-            />
-          </section>
-        </FadeIn>
+      </div> {/* Close container here */}
 
-      </div>
+      {/* Full width image outside the container bounds */}
+      <FadeIn delay={0.3} direction="up" className="w-full mt-4 md:mt-8">
+        <section className="w-full">
+          {/* Image with widescreen aspect ratio on mobile, fixed height on desktop */}
+          <div 
+            className="w-full aspect-video md:aspect-auto md:min-h-[600px] bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/Case-study.jpg')" }}
+          />
+        </section>
+      </FadeIn>
     </div>
   );
 }

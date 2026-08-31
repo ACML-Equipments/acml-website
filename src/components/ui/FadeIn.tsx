@@ -42,7 +42,7 @@ export function FadeIn({
         ease: "easeOut",
       }}
       className={className}
-      style={fullWidth ? { width: "100%" } : undefined}
+      style={fullWidth ? { width: "100vw" } : undefined}
     >
       {children}
     </motion.div>
