@@ -69,11 +69,11 @@ export function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center gap-6 font-medium text-base uppercase tracking-wide">
+          <Link href="/about" className="hover:text-brand-red transition-colors">About</Link>
           <Link href="/products" className="hover:text-brand-red transition-colors">Products</Link>
           <Link href="/repair-maintenance" className="hover:text-brand-red transition-colors">Repair & Maintenance</Link>
           <Link href="/training" className="hover:text-brand-red transition-colors">Training</Link>
           <Link href="/partnerships" className="hover:text-brand-red transition-colors">Partnerships</Link>
-          <Link href="/about" className="hover:text-brand-red transition-colors">About</Link>
           <Link href="/contact" className="bg-brand-red text-white font-inter px-6 py-2.5 rounded-full hover:bg-red-700 transition-colors">Contact</Link>
         </nav>
 
@@ -108,6 +108,9 @@ export function Header() {
           >
             <nav className="flex flex-col font-medium text-sm uppercase tracking-wide p-4 gap-2 text-center pb-6">
               <motion.div variants={linkVariants}>
+                <Link href="/about" className="block w-full py-1.5 hover:text-brand-red transition-colors" onClick={closeMobileMenu}>About</Link>
+              </motion.div>
+              <motion.div variants={linkVariants}>
                 <Link href="/products" className="block w-full py-1.5 hover:text-brand-red transition-colors" onClick={closeMobileMenu}>Products</Link>
               </motion.div>
               <motion.div variants={linkVariants}>
@@ -118,9 +121,6 @@ export function Header() {
               </motion.div>
               <motion.div variants={linkVariants}>
                 <Link href="/partnerships" className="block w-full py-1.5 hover:text-brand-red transition-colors" onClick={closeMobileMenu}>Partnerships</Link>
-              </motion.div>
-              <motion.div variants={linkVariants}>
-                <Link href="/about" className="block w-full py-1.5 hover:text-brand-red transition-colors" onClick={closeMobileMenu}>About</Link>
               </motion.div>
               <motion.div variants={linkVariants} className="pt-2">
                 <Link href="/contact" className="inline-block mx-auto px-10 py-2 mt-2 bg-brand-red text-white font-inter rounded-full hover:bg-red-700 transition-colors" onClick={closeMobileMenu}>Contact</Link>
