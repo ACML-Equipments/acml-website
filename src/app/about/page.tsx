@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
+import FillingEmptyLabsSection from './FillingEmptyLabsSection';
 
 export const metadata: Metadata = {
   title: 'About & Achievements',
@@ -8,145 +10,92 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-12 md:pt-20 pb-0 relative overflow-x-hidden">
-      <div className="container mx-auto px-4 max-w-5xl">
-        
-        {/* PROJECT: FILLING EMPTY LABS */}
-        <section className="mb-20">
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <FadeIn>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-brand-navy uppercase tracking-tight">
-                Project: Filling Empty Labs
-              </h1>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <h2 className="text-xl sm:text-2xl md:text-3xl text-brand-red font-medium leading-relaxed mb-4">
-                Filling the Labs, Practical Learning, Better Results.
-              </h2>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <p className="text-lg md:text-xl text-slate-600 font-medium italic">
-                Made in Ghana. Built to Last. Priced for Africa.
-              </p>
-            </FadeIn>
-          </div>
-          
-          {/* Grid for Problem & Solution */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <FadeIn delay={0.3} className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
-              <h3 className="text-2xl font-bold text-brand-navy mb-4">1. THE PROBLEM</h3>
-              <p className="text-slate-700 leading-relaxed text-lg">
-                Currently, most Senior High Schools in Ghana and across WAEC countries have empty or ill-equipped science laboratories, forcing students to learn science without practical experience. This leads to poor understanding of science concepts and low WASSCE performance in core science subjects.
-              </p>
-            </FadeIn>
-            
-            <FadeIn delay={0.4} className="bg-brand-navy p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-white mb-4">2. OUR SOLUTION</h3>
-              <p className="text-slate-300 leading-relaxed text-lg">
-                A-CML manufactures and supplies durable, high-quality science laboratory equipment using locally sourced materials at an affordable price. As an affiliate of Akpabey Group LLC, USA, we combine international standards with local production to ensure every SHS can afford a complete, functional lab.
-              </p>
-            </FadeIn>
-          </div>
+    <div className="pb-0 relative overflow-clip">
+      
+      {/* ABOUT US BANNER */}
+      <section className="bg-brand-navy pt-16 md:pt-32 pb-12 md:pb-20 px-4 text-center relative overflow-hidden">
+        {/* Subtle background glow/pattern */}
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-red via-transparent to-transparent"></div>
+        <FadeIn>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight relative z-10">
+            About Us
+          </h1>
+        </FadeIn>
+      </section>
 
-          {/* Grid for Vision & Mission */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <FadeIn delay={0.5} className="p-8">
-              <h3 className="text-2xl font-bold text-brand-navy mb-4">3. VISION</h3>
-              <p className="text-slate-700 leading-relaxed text-lg">
-                To ensure no science student in Ghana and across WAEC countries learns science without practical experience - where every SHS has a fully equipped, functional laboratory that delivers better WASSCE results.
-              </p>
-            </FadeIn>
-            
-            <FadeIn delay={0.6} className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-              <h3 className="text-2xl font-bold text-brand-navy mb-4">4. MISSION</h3>
-              <p className="text-slate-700 leading-relaxed text-lg">
-                To manufacture and supply affordable, durable science laboratory equipment using local materials, and to equip, repair, and train SHS science departments to transform empty labs into centers of practical learning.
-              </p>
-            </FadeIn>
-          </div>
+      {/* SUMMARY */}
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="container mx-auto">
+          <FadeIn delay={0.1}>
+            <p className="text-xl md:text-3xl text-slate-700 max-w-5xl mx-auto text-center leading-relaxed font-light">
+              African-Caribbean Manufacturing Ltd (A-CML) is a pioneering Ghanaian manufacturer of high-quality, durable, and affordable science laboratory equipment. We combine international design standards with local production to transform science education across Africa.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
 
-          {/* Full width Objectives */}
-          <FadeIn fullWidth className="w-[100vw] relative left-1/2 -translate-x-1/2 mb-16">
-            <div className="bg-slate-50 py-16 border-y border-slate-100">
-              <div className="container mx-auto px-4 max-w-4xl">
-                <h3 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-10 text-center">5. PROJECT OBJECTIVES</h3>
-                <div className="space-y-6">
-                  <div className="flex gap-4">
-                    <span className="font-bold text-brand-red text-xl">a.</span>
-                    <p className="text-slate-800 text-lg">To manufacture and supply at least 50 essential science apparatus at 30% less cost than imported alternatives.</p>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-bold text-brand-red text-xl">b.</span>
-                    <p className="text-slate-800 text-lg">To equip 100 underserved SHS laboratories with complete functional setups within 24 months.</p>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-bold text-brand-red text-xl">c.</span>
-                    <p className="text-slate-800 text-lg">To provide hands-on training for 300 science teachers and lab technicians on equipment use, safety, and maintenance.</p>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-bold text-brand-red text-xl">d.</span>
-                    <p className="text-slate-800 text-lg">To establish a sustainable repair and maintenance system to ensure labs remain functional.</p>
-                  </div>
+      <div className="container mx-auto px-4 max-w-7xl mt-20">
+        {/* ABOUT THE FOUNDER */}
+        <section className="mb-24 mt-10">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-20">
+            <FadeIn delay={0.2} className="w-full h-full">
+              <div className="sticky top-28 pt-2 md:pt-10">
+                <div className="relative w-full aspect-[4/5] overflow-hidden bg-slate-100 rounded-2xl shadow-sm">
+                  <Image 
+                    src="/Mr-Akpabey.png" 
+                    alt="Gilbert C. Akpabey" 
+                    fill 
+                    className="object-cover"
+                  />
                 </div>
               </div>
-            </div>
-          </FadeIn>
-
-          {/* Grid for Impact & Commitment */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <FadeIn delay={0.7} className="px-4">
-              <h3 className="text-2xl font-bold text-brand-navy mb-6">6. EXPECTED IMPACT</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-slate-700">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
-                  <span className="text-lg">Improved practical understanding of science among students</span>
-                </li>
-                <li className="flex items-start gap-3 text-slate-700">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
-                  <span className="text-lg">Better WASSCE results in Physics, Chemistry and Biology</span>
-                </li>
-                <li className="flex items-start gap-3 text-slate-700">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
-                  <span className="text-lg">Reduced import dependency and foreign exchange loss for Ghana</span>
-                </li>
-                <li className="flex items-start gap-3 text-slate-700">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
-                  <span className="text-lg">Creation of local manufacturing jobs for Ghanaian youth</span>
-                </li>
-                <li className="flex items-start gap-3 text-slate-700">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-brand-red flex-shrink-0"></div>
-                  <span className="text-lg">Sustainable, functional science labs that last for years</span>
-                </li>
-              </ul>
             </FadeIn>
-            
-            <FadeIn delay={0.8}>
-              <div className="bg-brand-red text-white p-10 md:p-12 rounded-3xl text-center shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-white/90 uppercase tracking-widest text-sm">7. Our Commitment</h3>
-                <p className="text-xl md:text-2xl font-medium leading-relaxed">
-                  We don't just supply equipment - We <br/><br/>
-                  <span className="font-bold text-2xl md:text-3xl underline decoration-4 underline-offset-8">Manufacture, Install, Repair, and Train.</span>
+            <FadeIn delay={0.4} className="pt-2 md:pt-10">
+              <p className="text-brand-red font-bold uppercase tracking-widest text-sm mb-4">Founder, ACML</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-brand-navy mb-8 leading-tight tracking-tight">
+                Gilbert C. Akpabey
+              </h2>
+              
+              <div className="space-y-6 text-slate-700 text-lg lg:text-xl leading-relaxed">
+                <p>
+                  Gilbert C. Akpabey is an accomplished accounting, auditing, taxation, and management consulting professional with more than four decades of experience across Ghana, Nigeria, and the United States.
+                </p>
+                <p>
+                  His career spans financial management, internal controls, fraud investigation, public-sector oversight, taxation, and strategic business advisory. He has held senior professional roles in both public and private institutions and currently serves as Chairman and Lead Consultant of Akpabey Group LLC.
+                </p>
+                <p>
+                  Beyond his consulting work, Mr. Akpabey is the founder of African-Caribbean Manufacturing Ltd (A-CML) and the African West Indies Diaspora Alliance (AWIDA), reflecting his broader commitment to enterprise development, international collaboration, and strengthening connections between Africa and the Caribbean diaspora.
+                </p>
+                <p>
+                  Known for his commitment to integrity, accountability, and professional excellence, Mr. Akpabey brings extensive international experience and strategic insight to helping organizations strengthen their financial systems, improve institutional effectiveness, and pursue sustainable growth.
                 </p>
               </div>
             </FadeIn>
           </div>
         </section>
+      </div>
+
+      <div className="container mx-auto px-4 max-w-5xl">
+
+        <FillingEmptyLabsSection />
 
         {/* FEATURED CASE STUDY (HERO BANNER) */}
         <div className="text-center mt-12 md:mt-20 mb-10">
           <FadeIn>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy tracking-tight mb-8">Featured Case Study</h2>
+            <h2 className="text-[1.75rem] sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-brand-navy tracking-tight md:whitespace-nowrap">
+              Featured Case Study
+            </h2>
           </FadeIn>
           
           <div className="container mx-auto px-4 max-w-4xl">
             <FadeIn delay={0.1}>
-              <h3 className="text-xl sm:text-2xl md:text-4xl font-medium text-brand-navy mb-6 leading-tight">
+              <h3 className="text-lg md:text-xl text-slate-500 mb-6">
                 Presbyterian Boys' Senior High School, Legon
               </h3>
             </FadeIn>
             
             <FadeIn delay={0.2}>
-              <div className="space-y-6 text-slate-600 text-base md:text-xl leading-relaxed mb-12">
+              <div className="space-y-6 text-slate-600 text-[17px] md:text-xl leading-relaxed mb-12">
                 <p>
                   A-CML is proud to be a trusted supplier for Presbyterian Boys' Senior High School (PRESEC), one of Ghana's premier educational institutions and consistent champions of the National Science and Maths Quiz. 
                 </p>
