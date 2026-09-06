@@ -20,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.acmlghana.com"),
   title: {
     template: "%s | African-Caribbean Manufacturing Ltd",
     default: "A-CML | Science Laboratory Equipment Manufacturer",
