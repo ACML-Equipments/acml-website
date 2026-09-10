@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
 import FillingEmptyLabsSection from './FillingEmptyLabsSection';
+import BoardOfDirectorsSection from './BoardOfDirectorsSection';
 
 export const metadata: Metadata = {
   title: 'About & Achievements',
@@ -73,6 +74,9 @@ export default function AboutPage() {
             </FadeIn>
           </div>
         </section>
+
+        {/* BOARD OF DIRECTORS */}
+        <BoardOfDirectorsSection />
       </div>
 
       <div className="container mx-auto px-4 max-w-5xl">
