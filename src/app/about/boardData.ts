@@ -29,7 +29,7 @@ export const boardMembers: BoardMember[] = [
     id: 'daniel-oku-adamah',
     name: 'Daniel Oku Adamah',
     role: 'Director',
-    image: '/directors/Adama.jpg',
+    image: '/directors/Adama-2.jpg',
     shortBio: 'Four decades of public service leadership, machine shop operations, and administrative oversight within the Ghana Civil Service and industrial sectors.',
     fullBio: [
       'Daniel Oku Adamah brings decades of administrative insight, public service expertise, and industrial foundational knowledge to African-Caribbean Manufacturing Ltd.',
